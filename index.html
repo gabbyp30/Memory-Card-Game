@@ -4,149 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Card Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Bungee+Spice&family=Calligraffitti&family=Codystar:wght@300;400&family=Doto:wght@100..900&family=Ephesis&family=Exile&family=Love+Light&family=Noto+Sans+JP:wght@100..900&family=Pirata+One&family=Playwrite+PE+Guides&family=Protest+Riot&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Bungee+Spice&family=Calligraffitti&family=Codystar:wght@300;400&family=Doto:wght@100..900&family=Ephesis&family=Exile&family=Love+Light&family=Neonderthaw&family=Noto+Sans+JP:wght@100..900&family=Pirata+One&family=Playwrite+PE+Guides&family=Protest+Riot&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Neonderthaw&display=swap" rel="stylesheet">
 </head>
 <link rel="stylesheet" href="./CSS/style.css">
 <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-<body>
+<body class="body">
     
     <div class="container">
-        <div class="row">
+        <div class="row dir">
             <div class="col text-center">
-                <h1 class="game">Pelmanism</h1>
+               <h1 class="title">Pelmanism</h1>
+
                 <p class="directions">In a single-player memory card game, you shuffle and place all the cards face down. Flip over two cards at a time, trying to find matching pairs. If they match, keep them and continue. If they do not, turn them back over and try to remember their locations for future turns. Keep going until all pairs are matched. The goal is to complete the game using the fewest moves possible!</p>
             </div>
         </div>
     </div>
     <div class="grid-container">
-            <p>Score:<span class="score"></span><p>
+            <p>Score:<span class="score"></span>
                 <div class="actions">
-                    <button id="restartBtn">Restart Game</button>
+                    <button id="restartBtn" class="rest">Restart Game</button>
                 </div>
-        
+            </p>
 
         <div class="container card">
             <div class="row ">
-            <div class="col-3 card-front">
-                <img src="./Images/hearts.webp" class="img-fluid" id="front-card" alt="">
-            </div>
-            <!-- <div class="col-3 card-back">
-                <img src="./Images/babyE.jpg" class="img-fluid" id="back-card" alt="Image of a baby boy sitting on a green park bench smiling with a yellow and white striped onsie">
-            </div> -->
+                <div class="col-3 card-front">
+                    <img src="./Images/newcard.png" class="img-fluid" id="front-card" alt="">
+                </div>
+            
+            
+                <div class="col-3 card-front">
+                    <img src="./Images/newcard.png" class="img-fluid" id="front-card" alt="">
+                </div>
+            
         
-            <div class="col-3 card-front">
-                <img src="./Images/hearts.webp" class="img-fluid" id="front-card" alt="">
-            </div>
-            <!-- <div class="col-3 card-back">
-                <img src="./Images/babyA.jpg" class="img-fluid"id="back-card" alt="Image of baby girl in an elmo onsie with a pink and gold polka dot tutu and wearing a red turban">
-            </div> -->
-        
-            <div class="col-3 card-front">
-                <img src="./Images/hearts.webp" class="img-fluid"id="front-card" alt="">
-            </div>
-            <!-- <div class="col-3 card-back">
-                <img src="./Images/pizza.jpg" class="img-fluid"id="back-card" alt="Image of a father, daughter, and son wearing coordinating orange clothes holding pizzas">
-            </div> -->
+                <div class="col-3 card-front">
+                    <img src="./Images/newcard.png" class="img-fluid"id="front-card" alt="">
+                </div>
+            
 
-            <div class="col-3 card-front">
-                <img src="./Images/hearts.webp" class="img-fluid"id="front-card" alt="">
+                <div class="col-3 card-front">
+                    <img src="./Images/newcard.png" class="img-fluid"id="front-card" alt="">
+                </div>
             </div>
-            <!-- <div class="col-3 card-back">
-                <img src="./Images/black.jpg"class="img-fluid"id="back-card" alt="This is an image of a faimly of four, dressed in black. Taking a selfie in large mirror.">
-            </div> -->
         </div>
 
         <div class="container card ">
             <div class="row ">
                 <div class="col-3 card-front">
-                    <img src="./Images/hearts.webp" class="img-fluid"id="front-card" alt="">
+                    <img src="./Images/newcard.png" class="img-fluid"id="front-card" alt="">
                 </div>
-                <!-- <div class="col-3 card-back">
-                    <img src="./Images/pizza.jpg" class="img-fluid"id="back-card" alt="Image of a father, daughter, and son wearing coordinating orange clothes holding pizzas">
-                </div>             -->
+               
             
+                <div class="col-3 card-front">
+                    <img src="./Images/newcard.png" class="img-fluid"id="front-card" alt="">
+                </div>
+                
+                <div class="col-3 card-front">
+                    <img src="./Images/newcard.png" class="img-fluid"id="front-card" alt="">
+                </div>
+               
         
                 <div class="col-3 card-front">
-                    <img src="./Images/hearts.webp" class="img-fluid"id="front-card" alt="">
+                    <img src="./Images/newcard.png"class="img-fluid"id="front-card" alt="">
                 </div>
-                <!-- <div class="col-3 card-back">
-                    <img src="./Images/babyE.jpg" class="img-fluid" id="back-card" alt="Image of a baby boy sitting on a green park bench smiling with a yellow and white striped onsie">
-                </div> -->
-             
-                <div class="col-3 card-front">
-                    <img src="./Images/hearts.webp" class="img-fluid"id="front-card" alt="">
-                </div>
-                <!-- <div class="col-3 card-back">
-                    <img src="./Images/black.jpg"class="img-fluid"id="back-card" alt="This is an image of a faimly of four, dressed in black. Taking a selfie in large mirror.">
-                </div> -->
-        
-                <div class="col-3 card-front">
-                    <img src="./Images/hearts.webp"class="img-fluid"id="front-card" alt="">
-                </div>
-                <!-- <div class="col-3 card-back">
-                    <img src="./Images/babyA.jpg" class="img-fluid"id="back-card" alt="Image of baby girl in an elmo onsie with a pink and gold polka dot tutu and wearing a red turban">
-                </div> -->
+               
+            </div>
         </div>
         <div class="container card ">
             <div class="row ">
                 <div class="col-3 card-front">
-                    <img src="./Images/hearts.webp" class="img-fluid"id="front-card" alt="">
+                    <img src=".Images/newcard.png" class="img-fluid"id="front-card" alt="">
                 </div>
-                <!-- <div class="col-3 card-back">
-                    <img src="./Images/pizza.jpg" class="img-fluid"id="back-card" alt="Image of a father, daughter, and son wearing coordinating orange clothes holding pizzas">
-                </div>             -->
-            
+               
         
                 <div class="col-3 card-front">
-                    <img src="./Images/hearts.webp" class="img-fluid"id="front-card" alt="">
+                    <img src="./Images/newcard.png" class="img-fluid"id="front-card" alt="">
                 </div>
-                <!-- <div class="col-3 card-back">
-                    <img src="./Images/babyE.jpg" class="img-fluid" id="back-card" alt="Image of a baby boy sitting on a green park bench smiling with a yellow and white striped onsie">
-                </div> -->
+
              
                 <div class="col-3 card-front">
-                    <img src="./Images/hearts.webp" class="img-fluid"id="front-card" alt="">
+                    <img src="./Images/newcard.png" class="img-fluid"id="front-card" alt="">
                 </div>
-                <!-- <div class="col-3 card-back">
-                    <img src="./Images/black.jpg"class="img-fluid"id="back-card" alt="This is an image of a faimly of four, dressed in black. Taking a selfie in large mirror.">
-                </div> -->
+                
         
                 <div class="col-3 card-front">
-                    <img src="./Images/hearts.webp"class="img-fluid"id="front-card" alt="">
+                    <img src="./Images/newcard.png"class="img-fluid"id="front-card" alt="">
                 </div>
-                <!-- <div class="col-3 card-back">
-                    <img src="./Images/babyA.jpg" class="img-fluid"id="back-card" alt="Image of baby girl in an elmo onsie with a pink and gold polka dot tutu and wearing a red turban">
-                </div> -->
+            </div>    
         </div>
         <div class="container card ">
             <div class="row ">
                 <div class="col-3 card-front">
-                    <img src="./Images/hearts.webp" class="img-fluid"id="front-card" alt="">
+                    <img src="./Images/newcard.png" class="img-fluid"id="front-card" alt="">
                 </div>
-                <!-- <div class="col-3 card-back">
-                    <img src="./Images/pizza.jpg" class="img-fluid"id="back-card" alt="Image of a father, daughter, and son wearing coordinating orange clothes holding pizzas">
-                </div>             -->
-            
+                
         
                 <div class="col-3 card-front">
-                    <img src="./Images/hearts.webp" class="img-fluid"id="front-card" alt="">
+                    <img src="./Images/newcard.png" class="img-fluid"id="front-card" alt="">
                 </div>
-                <!-- <div class="col-3 card-back">
-                    <img src="./Images/babyE.jpg" class="img-fluid" id="back-card" alt="Image of a baby boy sitting on a green park bench smiling with a yellow and white striped onsie">
-                </div> -->
+            
              
                 <div class="col-3 card-front">
-                    <img src="./Images/hearts.webp" class="img-fluid"id="front-card" alt="">
+                    <img src="./Images/newcard.png" class="img-fluid"id="front-card" alt="">
                 </div>
-                <!-- <div class="col-3 card-back">
-                    <img src="./Images/black.jpg"class="img-fluid"id="back-card" alt="This is an image of a faimly of four, dressed in black. Taking a selfie in large mirror.">
-                </div> -->
+               
         
                 <div class="col-3 card-front">
-                    <img src="./Images/hearts.webp"class="img-fluid"id="front-card" alt="">
+                    <img src="./Images/newcard.png"class="img-fluid"id="front-card" alt="">
                 </div>
-                <!-- <div class="col-3 card-back">
-                    <img src="./Images/babyA.jpg" class="img-fluid"id="back-card" alt="Image of baby girl in an elmo onsie with a pink and gold polka dot tutu and wearing a red turban">
-                </div> -->
+            </div>    
         </div>
     </div>
 

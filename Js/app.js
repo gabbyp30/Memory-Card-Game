@@ -27,12 +27,12 @@ img[6].addEventListener('click', () => flipCard(6, "./Images/pizza.jpg"));
 img[7].addEventListener('click', () => flipCard(7, "./Images/black.jpg"));
 img[8].addEventListener('click', () => flipCard(8, "./Images/brunch.jpg"));
 img[9].addEventListener('click', () => flipCard(9, "./Images/blue.jpg"));
-img[10].addEventListener('click', () => flipCard(10, "./Images/orange.jpg"));
+img[10].addEventListener('click', () => flipCard(10, "./Images/orange1.jpg"));
 img[11].addEventListener('click', () => flipCard(11, "./Images/mtsmoke.jpg"));
 img[12].addEventListener('click', () => flipCard(12, "./Images/blue.jpg"));
 img[13].addEventListener('click', () => flipCard(13, "./Images/mtsmoke.jpg"));
 img[14].addEventListener('click', () => flipCard(14, "./Images/brunch.jpg"));
-img[15].addEventListener('click', () => flipCard(15, "./Images/orange.jpg"));
+img[15].addEventListener('click', () => flipCard(15, "./Images/orange1.jpg"));
 
 let flippedCards = [];
 
@@ -57,10 +57,10 @@ function checkMatch() {
     } else {
         console.log("Not a match.");
         colImages[card1.index].classList.remove("card-inner");
-        img[card1.index].setAttribute("src", "./Images/hearts.webp");
+        img[card1.index].setAttribute("src", "./Images/newcard.png");
 
         colImages[card2.index].classList.remove("card-inner");
-        img[card2.index].setAttribute("src", "./Images/hearts.webp");
+        img[card2.index].setAttribute("src", "./Images/newcard.png");
     }
 
     
@@ -83,10 +83,10 @@ function checkMatch() {
     } else {
         console.log("Not a match.");
         colImages[card1.index].classList.remove("card-inner");
-        img[card1.index].setAttribute("src", "./Images/hearts.webp");
+        img[card1.index].setAttribute("src", "./Images/newcard.png");
 
         colImages[card2.index].classList.remove("card-inner");
-        img[card2.index].setAttribute("src", "./Images/hearts.webp");
+        img[card2.index].setAttribute("src", "./Images/newcard.png");
     }
 
     flippedCards = [];
@@ -123,7 +123,7 @@ function resetGame() {
     flippedCount = 0;
     colImages.forEach((card, index) => {
         card.classList.remove("card-inner");
-        img[index].setAttribute("src", "./Images/hearts.webp");
+        img[index].setAttribute("src", "./Images/newcard.png");
     });
 }
 
@@ -136,7 +136,7 @@ function resetGame() {
 
     colImages.forEach((card, index) => {
         card.classList.remove("card-inner");
-        img[index].setAttribute("src", "./Images/hearts.webp");
+        img[index].setAttribute("src", "./Images/newcard.png");
     });
 
     document.querySelector(".score").textContent = "0";
@@ -161,10 +161,10 @@ function checkMatch() {
     } else {
         console.log("Not a match.");
         colImages[card1.index].classList.remove("card-inner");
-        img[card1.index].setAttribute("src", "./Images/hearts.webp");
+        img[card1.index].setAttribute("src", "./Images/newcard.png");
 
         colImages[card2.index].classList.remove("card-inner");
-        img[card2.index].setAttribute("src", "./Images/hearts.webp");
+        img[card2.index].setAttribute("src", "./Images/newcard.png");
     }
 
     flippedCards = [];
@@ -184,9 +184,9 @@ function resetGame() {
         "./Images/pizza.jpg", "./Images/black.jpg",
         "./Images/babyE.jpg", "./Images/babyA.jpg",
         "./Images/pizza.jpg", "./Images/black.jpg",
-         "./Images/orange.jpg", "./Images/mtsmoke.jpg",
+         "./Images/orange1.jpg", "./Images/mtsmoke.jpg",
         "./Images/brunch.jpg", "./Images/blue.jpg",
-        "./Images/mtsmoke.jpg", "./Images/orange.jpg",
+        "./Images/mtsmoke.jpg", "./Images/orange1.jpg",
         "./Images/blue.jpg", "./Images/brunch.jpg"
     ];
     
@@ -194,7 +194,7 @@ function resetGame() {
 
     colImages.forEach((card, index) => {
         card.classList.remove("card-inner");
-        img[index].setAttribute("src", "./Images/hearts.webp"); 
+        img[index].setAttribute("src", "./Images/newcard.png"); 
         img[index].dataset.imgPath = imgPaths[index]; 
     });
 }

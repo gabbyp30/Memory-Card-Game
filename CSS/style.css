@@ -1,28 +1,54 @@
+.body{
+    background-color: black;
+}
+
+ @keyframes pinkGlow {
+0% {
+text-shadow: 0 0 5px #ad7566, 0 0 10px #ad7566, 0 0 20px #ad7566;
+}
+50% {
+text-shadow: 0 0 10px #ad7566, 0 0 20px #d67fad, 0 0 30px #c08676;
+ }
+100% {
+text-shadow: 0 0 5px #f7d5e6, 0 0 10px #c08676, 0 0 20px #c08676;
+ }
+ }
+
+
 
 img {
     max-width: 50px;
-    height: auto;
+    height: 250px;
     margin-top: 20%;
-    border: 5px solid black
+    border: 5px solid rgb(247, 250, 248);
+    margin-bottom: 10px;
+    
+    
+
 
 }
 
 .actions {
     display: flex;
     justify-content: center;
+
 }
  .actions button{
-    padding: 8px 16px;
+    background-color: black;
+    color: aliceblue;
     font-size: 30px;
-    border-radius: 10px;
-    background-color: palevioletred;
-    color: black;
+    
  }
 
  .card {
     width: 150px;
     height: 200px;
     perspective: 1000px;
+    
+
+ 
+
+    
 }
 
 .card-inner {
@@ -40,10 +66,67 @@ img {
 .card-front, .card-back {
     width: 100%;
     height: 100%;
-    /* position: absolute; */
+    background-color: black;
     backface-visibility: hidden;
 }
 
 .card-back {
     transform: rotateY(180deg);
 }
+
+.directions{
+  font-family: "Codystar", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+color: #e4b2aa; /* Hot pink */
+text-shadow: 0 0 5px #ce9bb4, 0 0 10px #e4b2aa, 0 0 20px #f5a7ce;
+font-size: 2em; /* Optional: make the text larger */
+font-weight: bold;
+
+ color: #e9a3c6;
+ font-size: 3em;
+ font-weight: bold;
+ animation: pinkGlow 2s infinite;
+
+
+}
+
+.codystar-regular {
+  font-family: "Codystar", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dir{
+    font-size: 5px;
+   
+}
+
+.score{
+    color: beige;
+
+
+
+}
+.rest{
+font-family: "Inspiration", cursive;
+font-weight: 400;
+font-style: normal;
+    border-radius: 2px;
+    border-color: aliceblue;
+    border-style: double;
+
+}
+
+.title{
+
+font-family: "Inspiration", cursive;
+font-weight: 400;
+font-style: normal;
+color: whitesmoke;
+margin-top: 5px;
+font-size: 50px;
+
+
+}
+
